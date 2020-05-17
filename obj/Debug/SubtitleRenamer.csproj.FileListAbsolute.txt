@@ -1,0 +1,17 @@
+C:\Users\104102\source\repos\SubtitleRenamer\bin\Debug\SubtitleRenamer.exe.config
+C:\Users\104102\source\repos\SubtitleRenamer\bin\Debug\SubtitleRenamer.exe
+C:\Users\104102\source\repos\SubtitleRenamer\bin\Debug\SubtitleRenamer.pdb
+C:\Users\104102\source\repos\SubtitleRenamer\obj\Debug\SubtitleRenamer.csprojAssemblyReference.cache
+C:\Users\104102\source\repos\SubtitleRenamer\obj\Debug\SubtitleRenamer.Properties.Resources.resources
+C:\Users\104102\source\repos\SubtitleRenamer\obj\Debug\SubtitleRenamer.csproj.GenerateResource.cache
+C:\Users\104102\source\repos\SubtitleRenamer\obj\Debug\SubtitleRenamer.csproj.CoreCompileInputs.cache
+C:\Users\104102\source\repos\SubtitleRenamer\obj\Debug\SubtitleRenamer.exe
+C:\Users\104102\source\repos\SubtitleRenamer\obj\Debug\SubtitleRenamer.pdb
+C:\Users\104102\source\repos\SubtitleRenamer\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\104102\source\repos\SubtitleRenamer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\104102\source\repos\SubtitleRenamer\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\104102\source\repos\SubtitleRenamer\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\104102\source\repos\SubtitleRenamer\obj\Debug\SubtitleRenamer.csproj.CopyComplete
+C:\Users\104102\source\repos\SubtitleRenamer\obj\Debug\SubtitleRenamer.AboutBox1.resources
+C:\Users\104102\source\repos\SubtitleRenamer\obj\Debug\SubtitleRenamer.Form2.resources
+C:\Users\104102\source\repos\SubtitleRenamer\obj\Debug\SubtitleRenamer.Form1.resources
