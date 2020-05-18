@@ -1,4 +1,4 @@
-# VidSub-Renamer
+# VidSub Renamer
 
 ![logo](./Resources/Subtitle%20Renamer%20Icon.png)   
 Rename video or subtitle file name easily!   
