@@ -1,6 +1,7 @@
 # VidSub-Renamer
-![VidSub Renamer logo](Resources/Subtitle Renamer Icon.png)   
-Rename video or subtitle file name easily!
+
+![logo](./Resources/Subtitle%20Renamer%20Icon.png)   
+Rename video or subtitle file name easily!   
 VidSub Renamer는 자막 파일명을 비디오 파일명에 맞추거나 또는 비디오 파일명을 자막 파일명에 맞춰 일괄적으로 변경해주는 프로그램입니다.
 
 ## Features
