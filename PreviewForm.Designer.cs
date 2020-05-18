@@ -144,8 +144,7 @@
             // 
             // PreviewForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(915, 480);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);

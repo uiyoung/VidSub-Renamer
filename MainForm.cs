@@ -543,6 +543,11 @@ namespace VidSubRenamer
                 comboBox1.SelectedIndex = 0;
         }
 
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void aboutSubtitleRenamerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AboutBox about = new AboutBox();
