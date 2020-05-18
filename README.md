@@ -19,5 +19,5 @@ rename 버튼을 눌러 원본파일명과 바뀔파일명을 확인합니다.
 확인 버튼을 눌러 이름을 바꿉니다.
 
 
-- Copyright Information
+# Copyright Information
   - Icons made by [Freepik](http://www.freepik.com/) from www.flaticon.com
