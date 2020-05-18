@@ -185,7 +185,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Subtitle Renamer Icon.png" />
+    <None Include="Resources\VidSubRenamerLogo.png" />
     <Content Include="Subtitle Renamer.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
