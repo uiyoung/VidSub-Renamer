@@ -356,8 +356,8 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(270, 17);
-            this.toolStripStatusLabel1.Text = "비디오와 자막 파일이 있는 폴더를 선택해주세요.";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(38, 17);
+            this.toolStripStatusLabel1.Text = "status";
             // 
             // toolStrip1
             // 
