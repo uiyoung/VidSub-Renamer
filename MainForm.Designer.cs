@@ -255,15 +255,14 @@
             // viewHelpToolStripMenuItem
             // 
             this.viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
-            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.viewHelpToolStripMenuItem.Text = "View Online Help";
-            this.viewHelpToolStripMenuItem.Click += new System.EventHandler(this.viewHelpToolStripMenuItem_Click);
             // 
             // aboutSubtitleRenamerToolStripMenuItem
             // 
             this.aboutSubtitleRenamerToolStripMenuItem.Name = "aboutSubtitleRenamerToolStripMenuItem";
             this.aboutSubtitleRenamerToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.aboutSubtitleRenamerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutSubtitleRenamerToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.aboutSubtitleRenamerToolStripMenuItem.Text = "About";
             this.aboutSubtitleRenamerToolStripMenuItem.Click += new System.EventHandler(this.aboutSubtitleRenamerToolStripMenuItem_Click);
             // 
@@ -358,7 +357,7 @@
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(270, 17);
-            this.toolStripStatusLabel1.Text = "비디오 파일명을 따라 자막의 파일명을 바꿉니다.";
+            this.toolStripStatusLabel1.Text = "비디오와 자막 파일이 있는 폴더를 선택해주세요.";
             // 
             // toolStrip1
             // 

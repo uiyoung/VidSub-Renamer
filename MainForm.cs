@@ -24,6 +24,7 @@ namespace VidSubRenamer
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // init settings
             btnRename.Enabled = false;
             refreshFolderToolStripMenuItem.Enabled = false;
             moveItemsToTopToolStripMenuItem.Enabled = false;
@@ -167,6 +168,29 @@ namespace VidSubRenamer
 
             OnAndOffMoveButtons(listView1);
             OnAndOffMoveButtons(listView2);
+
+            UpdateStatusText();
+        }
+
+        private void UpdateStatusText()
+        {
+            string message;
+
+            if (path == null || (listView1.Items.Count == 0 && listView2.Items.Count == 0))
+                message = "비디오와 자막 파일이 있는 폴더를 선택해주세요";
+            else if (listView1.Items.Count == 0)
+                message = "비디오 파일이 있는 폴더를 선택해주세요";
+            else if (listView2.Items.Count == 0)
+                message = "자막 파일이 있는 폴더를 선택해주세요";
+            else
+            {
+                if (renameTarget == Target.Subtitle)
+                    message = "비디오 파일명을 따라 자막의 파일명을 바꿉니다.";
+                else
+                    message = "자막 파일명을 따라 비디오의 파일명을 바꿉니다.";
+            }
+
+            toolStripStatusLabel1.Text = message;
         }
 
         private void UpdateCounterLabels()
@@ -374,7 +398,7 @@ namespace VidSubRenamer
 
             // check duplicated name in subtitle list(when rename target is video)
             // ex) if there's e03.smi, e03.srt in subtitle list, it will make two e03.mp4 file <- error
-            if(renameTarget == Target.Video)
+            if (renameTarget == Target.Video)
             {
                 if (CheckDuplicate(subtitleFiles))
                     return;
@@ -471,15 +495,13 @@ namespace VidSubRenamer
             {
                 renameTarget = Target.Subtitle;
                 pictureBox1.Image = Resources.pointing_right;
-                toolStripStatusLabel1.Text = "비디오 파일명을 따라 자막의 파일명을 바꿉니다.";
-
             }
             else if (comboBox1.SelectedIndex == 1)
             {
                 renameTarget = Target.Video;
                 pictureBox1.Image = Resources.pointing_left;
-                toolStripStatusLabel1.Text = "자막 파일명을 따라 비디오의 파일명을 바꿉니다.";
             }
+            UpdateStatusText();
         }
 
         private void listView1_Enter(object sender, EventArgs e)

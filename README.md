@@ -15,7 +15,7 @@ Download latest version from [Releases page](https://github.com/uiyoung/VidSub-R
 ## How to use    
 1. 폴더 열기`ctrl+O`
    - ![open folder img](/path/to/img.jpg)
-   - 비디오 파일과 자막이 있는 폴더를 선택합니다.
+   - 툴스트립의 폴더선택 버튼 또는 path textbox옆 select 버튼을 눌러 비디오 파일과 자막이 있는 폴더를 선택합니다.
 2. 목록 확인하기
    - ![open folder img](/path/to/img.jpg)
    - 폴더에서 불러온 비디오파일과 자막파일의 목록을 확인합니다. 
