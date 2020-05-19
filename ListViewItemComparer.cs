@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Windows.Forms;
 
 namespace VidSubRenamer
 {
-    class ListViewItemComparer : System.Collections.IComparer
+    class ListViewItemComparer :IComparer
     {
         private int col;
         private string order;
