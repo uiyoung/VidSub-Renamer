@@ -548,6 +548,11 @@ namespace VidSubRenamer
             Application.Exit();
         }
 
+        private void viewHelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/uiyoung/VidSub-Renamer#how-to-use");
+        }
+
         private void aboutSubtitleRenamerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AboutBox about = new AboutBox();

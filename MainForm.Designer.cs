@@ -145,7 +145,7 @@
             // 
             this.openFolderToolStripMenuItem.Name = "openFolderToolStripMenuItem";
             this.openFolderToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openFolderToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.openFolderToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.openFolderToolStripMenuItem.Text = "Open Folder";
             this.openFolderToolStripMenuItem.Click += new System.EventHandler(this.btnSelect_Click);
             // 
@@ -154,20 +154,20 @@
             this.refreshFolderToolStripMenuItem.Name = "refreshFolderToolStripMenuItem";
             this.refreshFolderToolStripMenuItem.ShortcutKeyDisplayString = "";
             this.refreshFolderToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.refreshFolderToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.refreshFolderToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.refreshFolderToolStripMenuItem.Text = "Refresh Folder";
             this.refreshFolderToolStripMenuItem.Click += new System.EventHandler(this.tsbRefresh_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(179, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(180, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -190,7 +190,7 @@
             // 
             this.moveItemsToTopToolStripMenuItem.Name = "moveItemsToTopToolStripMenuItem";
             this.moveItemsToTopToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Home)));
-            this.moveItemsToTopToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.moveItemsToTopToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
             this.moveItemsToTopToolStripMenuItem.Text = "Move items to top";
             this.moveItemsToTopToolStripMenuItem.Click += new System.EventHandler(this.tsbToTop_Click);
             // 
@@ -198,7 +198,7 @@
             // 
             this.moveItemsUpToolStripMenuItem.Name = "moveItemsUpToolStripMenuItem";
             this.moveItemsUpToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Up)));
-            this.moveItemsUpToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.moveItemsUpToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
             this.moveItemsUpToolStripMenuItem.Text = "Move items up";
             this.moveItemsUpToolStripMenuItem.Click += new System.EventHandler(this.tsbUp_Click);
             // 
@@ -206,7 +206,7 @@
             // 
             this.moveItemsDownToolStripMenuItem.Name = "moveItemsDownToolStripMenuItem";
             this.moveItemsDownToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Down)));
-            this.moveItemsDownToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.moveItemsDownToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
             this.moveItemsDownToolStripMenuItem.Text = "Move items down";
             this.moveItemsDownToolStripMenuItem.Click += new System.EventHandler(this.tsbDown_Click);
             // 
@@ -214,33 +214,33 @@
             // 
             this.moveItemsToBottomToolStripMenuItem.Name = "moveItemsToBottomToolStripMenuItem";
             this.moveItemsToBottomToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.End)));
-            this.moveItemsToBottomToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.moveItemsToBottomToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
             this.moveItemsToBottomToolStripMenuItem.Text = "Move items to bottom";
             this.moveItemsToBottomToolStripMenuItem.Click += new System.EventHandler(this.tsbToBottom_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(240, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(243, 6);
             // 
             // deleteItemsToolStripMenuItem
             // 
             this.deleteItemsToolStripMenuItem.Name = "deleteItemsToolStripMenuItem";
             this.deleteItemsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Delete;
-            this.deleteItemsToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.deleteItemsToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
             this.deleteItemsToolStripMenuItem.Text = "Delete Items";
             this.deleteItemsToolStripMenuItem.Click += new System.EventHandler(this.tsbRemove_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(240, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(243, 6);
             // 
             // preferencesToolStripMenuItem
             // 
             this.preferencesToolStripMenuItem.Name = "preferencesToolStripMenuItem";
             this.preferencesToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F4;
-            this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
             this.preferencesToolStripMenuItem.Text = "Preferences";
             // 
             // helpToolStripMenuItem
@@ -255,14 +255,15 @@
             // viewHelpToolStripMenuItem
             // 
             this.viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
-            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.viewHelpToolStripMenuItem.Text = "View Help";
+            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewHelpToolStripMenuItem.Text = "View Online Help";
+            this.viewHelpToolStripMenuItem.Click += new System.EventHandler(this.viewHelpToolStripMenuItem_Click);
             // 
             // aboutSubtitleRenamerToolStripMenuItem
             // 
             this.aboutSubtitleRenamerToolStripMenuItem.Name = "aboutSubtitleRenamerToolStripMenuItem";
             this.aboutSubtitleRenamerToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.aboutSubtitleRenamerToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.aboutSubtitleRenamerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutSubtitleRenamerToolStripMenuItem.Text = "About";
             this.aboutSubtitleRenamerToolStripMenuItem.Click += new System.EventHandler(this.aboutSubtitleRenamerToolStripMenuItem_Click);
             // 
@@ -356,7 +357,7 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(265, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(270, 17);
             this.toolStripStatusLabel1.Text = "비디오 파일명을 따라 자막의 파일명을 바꿉니다.";
             // 
             // toolStrip1
