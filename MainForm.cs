@@ -9,13 +9,14 @@ using VidSubRenamer.Properties;
 
 namespace VidSubRenamer
 {
+    public enum Target { Video, Subtitle };
     public partial class MainForm : Form
     {
         public static string path;
+        public static Target renameTarget;
         private readonly string[] videoExtensions = { ".mp4", ".mkv", ".webm", ".flv", ".vob", ".avi", ".mts", ".ts", ".m2ts", ".mov", ".wmv", ".rm", ".rmvb", ".asf", ".amv", ".m4v", ".mpg", ".mpeg", ".mpv", ".m4v" };
         private readonly string[] subtitleExtentions = { ".smi", ".srt", ".ass", ".ssa", ".idx", ".sub", ".sup", ".psb" };
         private List<FileInfo> videoFiles, subtitleFiles;
-
         public MainForm()
         {
             InitializeComponent();
@@ -37,6 +38,7 @@ namespace VidSubRenamer
             tsbToBottom.Enabled = false;
             tsbRemove.Enabled = false;
             comboBox1.SelectedIndex = 0;
+            renameTarget = Target.Subtitle;
             listView1.ColumnClick += new ColumnClickEventHandler(ColumnClick);
             listView2.ColumnClick += new ColumnClickEventHandler(ColumnClick);
 
@@ -339,7 +341,7 @@ namespace VidSubRenamer
 
                     if (temp.Equals(next))
                     {
-                        string message = string.Format("{0} 목록에 같은 이름이 있습니다.\n{1}\n{2}", comboBox1.SelectedIndex == 0 ? "자막" : "비디오", _file[i].Name, _file[j].Name);
+                        string message = string.Format("{0} 목록에 같은 이름이 있습니다.\n{1}\n{2}", renameTarget == Target.Subtitle ? "자막" : "비디오", _file[i].Name, _file[j].Name);
                         MessageBox.Show(message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return true;
                     }
@@ -372,19 +374,19 @@ namespace VidSubRenamer
 
             // check duplicated name in subtitle list(when rename target is video)
             // ex) if there's e03.smi, e03.srt in subtitle list, it will make two e03.mp4 file <- error
-            if (comboBox1.SelectedIndex == 1)
+            if(renameTarget == Target.Video)
             {
                 if (CheckDuplicate(subtitleFiles))
                     return;
             }
             // check duplicated name in video list(when rename target is subtitle)
-            else if (comboBox1.SelectedIndex == 0)
+            else if (renameTarget == Target.Subtitle)
             {
                 if (CheckDuplicate(videoFiles))
                     return;
             }
 
-            PreviewForm confirmForm = new PreviewForm(videoFiles, subtitleFiles, comboBox1.SelectedIndex);
+            PreviewForm confirmForm = new PreviewForm(videoFiles, subtitleFiles);
             confirmForm.Owner = this;
             confirmForm.ShowDialog();
 
@@ -467,12 +469,14 @@ namespace VidSubRenamer
         {
             if (comboBox1.SelectedIndex == 0)
             {
+                renameTarget = Target.Subtitle;
                 pictureBox1.Image = Resources.pointing_right;
                 toolStripStatusLabel1.Text = "비디오 파일명을 따라 자막의 파일명을 바꿉니다.";
 
             }
             else if (comboBox1.SelectedIndex == 1)
             {
+                renameTarget = Target.Video;
                 pictureBox1.Image = Resources.pointing_left;
                 toolStripStatusLabel1.Text = "자막 파일명을 따라 비디오의 파일명을 바꿉니다.";
             }

@@ -11,16 +11,24 @@ namespace VidSubRenamer
         private List<FileInfo> videoFiles, subtitleFiles;
         private string tempDirName;
         private int skipCount, renameCount, overwriteCount;
-        private enum Target { Subtitle, Video }
-        Target renameTarget;
+        //private enum Target { Subtitle, Video }
+        //Target renameTarget;
 
-        public PreviewForm(List<FileInfo> _videoFiles, List<FileInfo> _subtitleFiles, int _renameTarget)
+        //public PreviewForm(List<FileInfo> _videoFiles, List<FileInfo> _subtitleFiles, int _renameTarget)
+        //{
+        //    InitializeComponent();
+
+        //    videoFiles = _videoFiles;
+        //    subtitleFiles = _subtitleFiles;
+        //    renameTarget = (Target)_renameTarget;
+        //}
+
+        public PreviewForm(List<FileInfo> _videoFiles, List<FileInfo> _subtitleFiles)
         {
             InitializeComponent();
 
             videoFiles = _videoFiles;
             subtitleFiles = _subtitleFiles;
-            renameTarget = (Target)_renameTarget;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -28,12 +36,12 @@ namespace VidSubRenamer
             this.KeyPreview = true;
             linkLabel1.Text = MainForm.path;
 
-            if (renameTarget == Target.Subtitle)
+            if (MainForm.renameTarget == Target.Subtitle)
             {
                 ListRenames(subtitleFiles, videoFiles);
                 lblConfirmMessage.Text = "위와 같이 자막의 파일명을 변경할까요?";
             }
-            else if (renameTarget == Target.Video)
+            else if (MainForm.renameTarget == Target.Video)
             {
                 ListRenames(videoFiles, subtitleFiles);
                 lblConfirmMessage.Text = "위와 같이 비디오의 파일명을 변경할까요?";
@@ -133,14 +141,14 @@ namespace VidSubRenamer
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            if (renameTarget == Target.Subtitle)
+            if (MainForm.renameTarget == Target.Subtitle)
             {
                 // create temp directory and move subtitle files
                 MoveFilesToTempDir(subtitleFiles);
                 // rename subtitle files
                 RenameFiles(subtitleFiles, videoFiles);
             }
-            else if (renameTarget == Target.Video)
+            else if (MainForm.renameTarget == Target.Video)
             {
                 // create temp directory and move video files
                 MoveFilesToTempDir(videoFiles);
