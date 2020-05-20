@@ -410,12 +410,13 @@ namespace VidSubRenamer
                     return;
             }
 
-            PreviewForm confirmForm = new PreviewForm(videoFiles, subtitleFiles);
-            confirmForm.Owner = this;
-            confirmForm.ShowDialog();
+            PreviewForm previewForm = new PreviewForm(videoFiles, subtitleFiles);
+            previewForm.Owner = this;
+            DialogResult result = previewForm.ShowDialog();
 
             // refresh lists after rename
-            OpenPath(path);
+            if(result == DialogResult.OK)
+                OpenPath(path);
         }
 
         private void OnAndOffMoveButtons(ListView _listView)

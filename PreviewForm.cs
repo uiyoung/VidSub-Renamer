@@ -121,7 +121,7 @@ namespace VidSubRenamer
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.ToString());
+                        MessageBox.Show(ex.GetType().ToString() + "\n" + ex.Message);
                         throw;
                     }
                 }
@@ -157,6 +157,8 @@ namespace VidSubRenamer
             // open explorer
             if (checkBox1.Checked)
                 System.Diagnostics.Process.Start(MainForm.path);
+
+            this.DialogResult = DialogResult.OK;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -166,6 +168,7 @@ namespace VidSubRenamer
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
 
