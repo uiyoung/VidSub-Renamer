@@ -579,6 +579,18 @@ namespace VidSubRenamer
             System.Diagnostics.Process.Start("https://github.com/uiyoung/VidSub-Renamer#how-to-use");
         }
 
+        private void txtPath_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                path = (sender as TextBox).Text;
+                if (Directory.Exists(path))
+                    OpenPath(path);
+                else
+                    MessageBox.Show("폴더 주소를 확인해주세요");
+            }
+        }
+
         private void aboutSubtitleRenamerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AboutBox about = new AboutBox();
