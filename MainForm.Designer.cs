@@ -256,8 +256,9 @@
             // viewHelpToolStripMenuItem
             // 
             this.viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
-            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewHelpToolStripMenuItem.Text = "View Online Help";
+            this.viewHelpToolStripMenuItem.Click += new System.EventHandler(this.viewHelpToolStripMenuItem_Click);
             // 
             // aboutSubtitleRenamerToolStripMenuItem
             // 

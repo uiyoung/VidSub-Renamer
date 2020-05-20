@@ -11,18 +11,7 @@ namespace VidSubRenamer
         private List<FileInfo> videoFiles, subtitleFiles;
         private string tempDirName;
         private int skipCount, renameCount, overwriteCount;
-        //private enum Target { Subtitle, Video }
-        //Target renameTarget;
-
-        //public PreviewForm(List<FileInfo> _videoFiles, List<FileInfo> _subtitleFiles, int _renameTarget)
-        //{
-        //    InitializeComponent();
-
-        //    videoFiles = _videoFiles;
-        //    subtitleFiles = _subtitleFiles;
-        //    renameTarget = (Target)_renameTarget;
-        //}
-
+  
         public PreviewForm(List<FileInfo> _videoFiles, List<FileInfo> _subtitleFiles)
         {
             InitializeComponent();
