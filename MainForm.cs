@@ -42,8 +42,6 @@ namespace VidSubRenamer
             renameTarget = Target.Subtitle;
             listView1.ColumnClick += new ColumnClickEventHandler(ColumnClick);
             listView2.ColumnClick += new ColumnClickEventHandler(ColumnClick);
-
-            preferencesToolStripMenuItem.Enabled = false;   // TODO: implement preference form
         }
 
         private void ColumnClick(object senderef, ColumnClickEventArgs e)
@@ -610,6 +608,12 @@ namespace VidSubRenamer
         {
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
                 e.Effect = DragDropEffects.Copy;
+        }
+
+        private void preferencesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PreferenceForm preference = new PreferenceForm();
+            preference.ShowDialog();
         }
 
         private void aboutSubtitleRenamerToolStripMenuItem_Click(object sender, EventArgs e)
