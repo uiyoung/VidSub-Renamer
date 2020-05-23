@@ -415,7 +415,7 @@ namespace VidSubRenamer
             DialogResult result = previewForm.ShowDialog();
 
             // refresh lists after rename
-            if(result == DialogResult.OK)
+            if (result == DialogResult.OK)
                 OpenPath(path);
         }
 
@@ -594,6 +594,15 @@ namespace VidSubRenamer
 
         private void MainForm_DragDrop(object sender, DragEventArgs e)
         {
+            string[] directoryName = (string[])e.Data.GetData(DataFormats.FileDrop);
+            if (Directory.Exists(directoryName[0]))
+            {
+                path = directoryName[0];
+                txtPath.Text = path;
+                OpenPath(path);
+            }
+            else
+                MessageBox.Show("폴더를 드래그해주세요", "error", MessageBoxButtons.OK,MessageBoxIcon.Error);
 
         }
 
