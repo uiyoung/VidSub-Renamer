@@ -17,6 +17,7 @@ namespace VidSubRenamer
         private readonly string[] videoExtensions = { ".mp4", ".mkv", ".webm", ".flv", ".vob", ".avi", ".mts", ".ts", ".m2ts", ".mov", ".wmv", ".rm", ".rmvb", ".asf", ".amv", ".m4v", ".mpg", ".mpeg", ".mpv", ".m4v" };
         private readonly string[] subtitleExtentions = { ".smi", ".srt", ".ass", ".ssa", ".idx", ".sub", ".sup", ".psb" };
         private List<FileInfo> videoFiles, subtitleFiles;
+
         public MainForm()
         {
             InitializeComponent();
@@ -601,7 +602,6 @@ namespace VidSubRenamer
             }
             else
                 MessageBox.Show("폴더를 드래그해주세요", "error", MessageBoxButtons.OK,MessageBoxIcon.Error);
-
         }
 
         private void MainForm_DragEnter(object sender, DragEventArgs e)
