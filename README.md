@@ -65,7 +65,7 @@ Download latest version from [Releases page](https://github.com/uiyoung/VidSub-R
 
 ## Known Issues
 
-- UI Shrink when open folder in High resolution environment.
+- UI shrinks when open folder in High resolution environment.
 
 ## Requirements
 
